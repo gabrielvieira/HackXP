@@ -214,7 +214,7 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
             var scale = max(0, maxDistance - length)
             
             // Scale the force of the explosion
-            scale = scale * scale * 5
+            scale = scale * scale * 2
             
             // Scale the distance vector to the appropriate scale
             distance.x = distance.x / length * scale

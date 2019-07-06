@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
     </dependencies>
     <scenes>
         <!--Money Investment View Controller-->
@@ -32,8 +33,24 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mTV-dj-vTr">
+                                <rect key="frame" x="16" y="20" width="343" height="31"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XEq-jr-er8"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mTV-dj-vTr" firstAttribute="leading" secondItem="Dr4-4I-xwJ" secondAttribute="leadingMargin" id="6w7-tY-qCB"/>
+                            <constraint firstItem="mTV-dj-vTr" firstAttribute="trailing" secondItem="Dr4-4I-xwJ" secondAttribute="trailingMargin" id="Mah-es-bNx"/>
+                            <constraint firstItem="mTV-dj-vTr" firstAttribute="top" secondItem="xN3-U7-U1S" secondAttribute="bottom" constant="20" id="Wjh-Ua-ATC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mcO-eP-xUR"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -44,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nzS-G2-ofk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="519" y="139"/>
+            <point key="canvasLocation" x="517.60000000000002" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

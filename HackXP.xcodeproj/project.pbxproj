@@ -36,7 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		574F4A3822D08BC600443D7D /* moneyInvestment.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = moneyInvestment.scnassets; path = "../../../../Library/CloudStorage/iCloud Drive/Documents/moneyInvestment.scnassets"; sourceTree = "<group>"; };
+		574F4A3822D08BC600443D7D /* moneyInvestment.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = moneyInvestment.scnassets; sourceTree = "<group>"; };
 		574F4A3A22D08BE800443D7D /* PBRMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBRMaterial.swift; sourceTree = "<group>"; };
 		574F4A3B22D08BE800443D7D /* CollisionCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionCategory.swift; sourceTree = "<group>"; };
 		574F4A3C22D08BE800443D7D /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
