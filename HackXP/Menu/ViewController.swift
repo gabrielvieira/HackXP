@@ -17,7 +17,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func moneyDidTap(_ sender: Any) {
-        
+        let storyBoard = UIStoryboard(name: "MoneyInvestment", bundle: nil)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: "MoneyInvestment")
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func planeDidTap(_ sender: Any) {

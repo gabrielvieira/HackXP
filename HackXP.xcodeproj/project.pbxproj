@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		574F4A3922D08BC600443D7D /* moneyInvestment.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 574F4A3822D08BC600443D7D /* moneyInvestment.scnassets */; };
+		574F4A3E22D08BE900443D7D /* PBRMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F4A3A22D08BE800443D7D /* PBRMaterial.swift */; };
+		574F4A3F22D08BE900443D7D /* CollisionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F4A3B22D08BE800443D7D /* CollisionCategory.swift */; };
+		574F4A4022D08BE900443D7D /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F4A3C22D08BE800443D7D /* Money.swift */; };
+		574F4A4122D08BE900443D7D /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F4A3D22D08BE800443D7D /* Plane.swift */; };
+		574F4A4322D08C1800443D7D /* MoneyInvestmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F4A4222D08C1800443D7D /* MoneyInvestmentViewController.swift */; };
+		574F4A4522D08C7800443D7D /* MoneyInvestment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574F4A4422D08C7800443D7D /* MoneyInvestment.storyboard */; };
 		C0121B8822D083B1004EE94A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C0121B8722D083B0004EE94A /* README.md */; };
 		C0121B8A22D083C2004EE94A /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0121B8922D083C2004EE94A /* Inceptionv3.mlmodel */; };
 		C0121B8E22D083EE004EE94A /* ARFaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0121B8B22D083EE004EE94A /* ARFaceNode.swift */; };
@@ -15,7 +22,6 @@
 		C0121B9222D0848B004EE94A /* TrackingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0121B9122D0848B004EE94A /* TrackingState.swift */; };
 		C0121B9422D08644004EE94A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0121B9322D08644004EE94A /* RoundedButton.swift */; };
 		C042CAF422D0492600838227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C042CAF322D0492600838227 /* AppDelegate.swift */; };
-		C042CAF622D0492600838227 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C042CAF522D0492600838227 /* art.scnassets */; };
 		C042CAF822D0492600838227 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C042CAF722D0492600838227 /* ViewController.swift */; };
 		C042CAFB22D0492600838227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C042CAF922D0492600838227 /* Main.storyboard */; };
 		C042CAFD22D0492700838227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C042CAFC22D0492700838227 /* Assets.xcassets */; };
@@ -30,6 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		574F4A3822D08BC600443D7D /* moneyInvestment.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = moneyInvestment.scnassets; path = "../../../../Library/CloudStorage/iCloud Drive/Documents/moneyInvestment.scnassets"; sourceTree = "<group>"; };
+		574F4A3A22D08BE800443D7D /* PBRMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBRMaterial.swift; sourceTree = "<group>"; };
+		574F4A3B22D08BE800443D7D /* CollisionCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionCategory.swift; sourceTree = "<group>"; };
+		574F4A3C22D08BE800443D7D /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		574F4A3D22D08BE800443D7D /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		574F4A4222D08C1800443D7D /* MoneyInvestmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyInvestmentViewController.swift; sourceTree = "<group>"; };
+		574F4A4422D08C7800443D7D /* MoneyInvestment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MoneyInvestment.storyboard; sourceTree = "<group>"; };
 		C0121B8722D083B0004EE94A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C0121B8922D083C2004EE94A /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		C0121B8B22D083EE004EE94A /* ARFaceNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARFaceNode.swift; sourceTree = "<group>"; };
@@ -39,7 +52,6 @@
 		C0121B9322D08644004EE94A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		C042CAF022D0492600838227 /* HackXP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackXP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C042CAF322D0492600838227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C042CAF522D0492600838227 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		C042CAF722D0492600838227 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C042CAFA22D0492600838227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C042CAFC22D0492700838227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +77,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		574F4A3722D08B1200443D7D /* MoneyInvestment */ = {
+			isa = PBXGroup;
+			children = (
+				574F4A4422D08C7800443D7D /* MoneyInvestment.storyboard */,
+				574F4A4222D08C1800443D7D /* MoneyInvestmentViewController.swift */,
+				574F4A3B22D08BE800443D7D /* CollisionCategory.swift */,
+				574F4A3C22D08BE800443D7D /* Money.swift */,
+				574F4A3A22D08BE800443D7D /* PBRMaterial.swift */,
+				574F4A3D22D08BE800443D7D /* Plane.swift */,
+				574F4A3822D08BC600443D7D /* moneyInvestment.scnassets */,
+			);
+			path = MoneyInvestment;
+			sourceTree = "<group>";
+		};
 		C0121B8422D07739004EE94A /* FaceSwap */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,12 +140,12 @@
 		C042CAF222D0492600838227 /* HackXP */ = {
 			isa = PBXGroup;
 			children = (
+				574F4A3722D08B1200443D7D /* MoneyInvestment */,
 				C0121B8622D083B0004EE94A /* mlmodels */,
 				C0121B8522D07AD7004EE94A /* Menu */,
 				C0121B8422D07739004EE94A /* FaceSwap */,
 				F7872A7E22D04B3400BEC57A /* MoneyAirplane */,
 				C042CAF322D0492600838227 /* AppDelegate.swift */,
-				C042CAF522D0492600838227 /* art.scnassets */,
 				C042CAFC22D0492700838227 /* Assets.xcassets */,
 				C042CAFE22D0492700838227 /* LaunchScreen.storyboard */,
 				C042CB0122D0492700838227 /* Info.plist */,
@@ -199,12 +225,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C042CAF622D0492600838227 /* art.scnassets in Resources */,
 				F7872A9322D0670300BEC57A /* silvo.png in Resources */,
 				C0121B8822D083B1004EE94A /* README.md in Resources */,
+				574F4A3922D08BC600443D7D /* moneyInvestment.scnassets in Resources */,
 				F7872A8422D0511D00BEC57A /* silvio.scnassets in Resources */,
 				C042CB0022D0492700838227 /* LaunchScreen.storyboard in Resources */,
 				F7872A8222D04CC000BEC57A /* MoneyAirplane.storyboard in Resources */,
+				574F4A4522D08C7800443D7D /* MoneyInvestment.storyboard in Resources */,
 				C0121B9022D083EE004EE94A /* ARFaceSimple.storyboard in Resources */,
 				C042CAFD22D0492700838227 /* Assets.xcassets in Resources */,
 				C042CAFB22D0492600838227 /* Main.storyboard in Resources */,
@@ -221,9 +248,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0121B8A22D083C2004EE94A /* Inceptionv3.mlmodel in Sources */,
+				574F4A3E22D08BE900443D7D /* PBRMaterial.swift in Sources */,
+				574F4A4322D08C1800443D7D /* MoneyInvestmentViewController.swift in Sources */,
+				574F4A3F22D08BE900443D7D /* CollisionCategory.swift in Sources */,
+				574F4A4122D08BE900443D7D /* Plane.swift in Sources */,
 				F7872A9122D05EBF00BEC57A /* SilvioPlayer.swift in Sources */,
 				C0121B9222D0848B004EE94A /* TrackingState.swift in Sources */,
 				F7872A8022D04C6600BEC57A /* MoneyAirplaneViewController.swift in Sources */,
+				574F4A4022D08BE900443D7D /* Money.swift in Sources */,
 				C0121B9422D08644004EE94A /* RoundedButton.swift in Sources */,
 				C0121B8E22D083EE004EE94A /* ARFaceNode.swift in Sources */,
 				C042CAF822D0492600838227 /* ViewController.swift in Sources */,
@@ -375,7 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6C9PJ896FB;
+				DEVELOPMENT_TEAM = 6F983ZW9E9;
 				INFOPLIST_FILE = HackXP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -393,7 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6C9PJ896FB;
+				DEVELOPMENT_TEAM = 6F983ZW9E9;
 				INFOPLIST_FILE = HackXP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
