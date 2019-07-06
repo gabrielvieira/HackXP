@@ -57,15 +57,27 @@
                                     <constraint firstAttribute="height" constant="160" id="jLF-vQ-EMP"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nag-pN-kka">
+                                <rect key="frame" x="10" y="587" width="355" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="yoS-v2-dn1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6pM-lC-qxv" firstAttribute="top" secondItem="SgJ-Hx-pOR" secondAttribute="top" id="6tJ-bF-KSK"/>
                             <constraint firstItem="bJQ-cy-1kP" firstAttribute="trailing" secondItem="6in-Wo-cB8" secondAttribute="trailing" constant="20" id="IU3-di-knu"/>
+                            <constraint firstItem="nag-pN-kka" firstAttribute="leading" secondItem="bJQ-cy-1kP" secondAttribute="leading" constant="10" id="OxK-Do-ODt"/>
                             <constraint firstItem="6in-Wo-cB8" firstAttribute="top" secondItem="bJQ-cy-1kP" secondAttribute="top" constant="20" id="WYK-81-Xiq"/>
+                            <constraint firstItem="bJQ-cy-1kP" firstAttribute="trailing" secondItem="nag-pN-kka" secondAttribute="trailing" constant="10" id="fuP-cy-7hj"/>
                             <constraint firstItem="6in-Wo-cB8" firstAttribute="leading" secondItem="bJQ-cy-1kP" secondAttribute="leading" constant="20" id="j7w-6t-XPu"/>
                             <constraint firstAttribute="bottom" secondItem="6pM-lC-qxv" secondAttribute="bottom" id="nJ0-a8-iir"/>
                             <constraint firstItem="6pM-lC-qxv" firstAttribute="leading" secondItem="SgJ-Hx-pOR" secondAttribute="leading" id="qa1-qU-uwq"/>
+                            <constraint firstItem="bJQ-cy-1kP" firstAttribute="bottom" secondItem="nag-pN-kka" secondAttribute="bottom" constant="20" id="tNY-EK-F7x"/>
                             <constraint firstAttribute="trailing" secondItem="6pM-lC-qxv" secondAttribute="trailing" id="vfb-uq-IDm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bJQ-cy-1kP"/>
@@ -73,6 +85,7 @@
                     <connections>
                         <outlet property="sceneView" destination="6pM-lC-qxv" id="Wq5-DT-FqN"/>
                         <outlet property="segmentSelected" destination="Zb3-U2-bmV" id="itI-0a-ckR"/>
+                        <outlet property="totalLabel" destination="nag-pN-kka" id="pUn-L2-pgc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mqa-Ib-rox" userLabel="First Responder" sceneMemberID="firstResponder"/>

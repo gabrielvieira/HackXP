@@ -4,10 +4,12 @@ import ARKit
 
 class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDelegate, SCNPhysicsContactDelegate, UIPopoverPresentationControllerDelegate {
     
+    @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var segmentSelected: UISegmentedControl!
     @IBOutlet var sceneView: ARSCNView!
     
     // A dictionary of all the current planes being rendered in the scene
+    var arr: [String] = ["Poupança\nR$ 796.313,55", "XP Investimentos\nR$ 2.733.962,04"]
     var planes: [UUID:Plane] = [:]
     var cubes: [Money] = []
     var arConfig = ARWorldTrackingConfiguration()
@@ -24,7 +26,7 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
         self.arConfig.isLightEstimationEnabled = true
         self.arConfig.planeDetection = .horizontal
         
-        sceneView.debugOptions = [.showWorldOrigin, .showFeaturePoints]
+//        sceneView.debugOptions = [.none]
         // Stop the screen from dimming while we are using the app
         UIApplication.shared.isIdleTimerDisabled = true
     }
@@ -32,14 +34,14 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        
+        self.resetScene()
+        self.setLabel(0)
         // Run the view's session
         self.sceneView.session.run(self.arConfig)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
         // Pause the view's session
         sceneView.session.pause()
     }
@@ -49,7 +51,22 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
         // Release any cached data, images, etc that aren't in use.
     }
     
-    @IBAction func didChangeSegment(_ sender: Any) {
+    func resetScene(){
+         self.sceneView.scene.rootNode.enumerateChildNodes { (node, stop) in
+            
+            if node is Money {
+                node.removeFromParentNode()
+            }
+        }
+    }
+    
+    func setLabel(_ index: Int) {
+        self.totalLabel.text = arr[index]
+    }
+    
+    @IBAction func didChangeSegment(_ sender: UISegmentedControl) {
+        self.resetScene()
+        self.setLabel(sender.selectedSegmentIndex)
     }
     
     func setupScene() {
@@ -77,7 +94,7 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
         // origin, after an explosion, if the geometry we added has fallen onto this surface which
         // is place way below all of the surfaces we would have detected via ARKit then we consider
         // this geometry to have fallen out of the world and remove it
-        let bottomPlane = SCNBox(width: 1000, height: 0.5, length: 1000, chamferRadius: 0)
+        let bottomPlane = SCNBox(width: 1500, height: 0.5, length: 1500, chamferRadius: 0)
         let bottomMaterial = SCNMaterial()
         
         // Make it transparent so you can't see it
@@ -136,7 +153,16 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
         
         // If there are multiple hits, just pick the closest plane
         let hitResult = result.first
-        self.insertCube(hitResult: hitResult!)
+        
+        var count = 30
+        
+        if self.segmentSelected.selectedSegmentIndex == 1 {
+            count = 150
+        }
+        
+        for n in 0..<count {
+            self.insertCube(hitResult: hitResult!)
+        }
     }
     
     @objc func explodeFrom(recognizer: UITapGestureRecognizer) {
@@ -214,11 +240,11 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
             
             // Set the maximum distance that the explosion will be felt, anything further than 2 meters from
             // the explosion will not be affected by any forces
-            let maxDistance: Float = 2
+            let maxDistance: Float = 1
             var scale = max(0, maxDistance - length)
             
             // Scale the force of the explosion
-            scale = scale * scale * 2
+            scale = scale * scale * 1
             
             // Scale the distance vector to the appropriate scale
             distance.x = distance.x / length * scale
@@ -227,7 +253,7 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
             
             // Apply a force to the geometry. We apply the force at one of the corners of the cube
             // to make it spin more, vs just at the center
-            cubeNode.childNodes.first?.physicsBody?.applyForce(distance, at: SCNVector3Make(0.05, 0.05, 0.05), asImpulse: true)
+            cubeNode.childNodes.first?.physicsBody?.applyForce(distance, at: SCNVector3Make(0.01, 0.01, 0.01), asImpulse: false)
         }
     }
     

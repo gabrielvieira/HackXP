@@ -13,7 +13,7 @@ class Money: SCNNode {
         material.diffuse.contents = UIImage(named: moneyValues[Int.random(in: 0...1)])
         node.geometry?.materials = [material]
         node.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
-        node.physicsBody?.mass = 2.0
+        node.physicsBody?.mass = 100.0
         node.physicsBody?.categoryBitMask = CollisionCategory.cube.rawValue
         node.position = position
         
