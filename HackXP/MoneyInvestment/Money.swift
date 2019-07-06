@@ -9,6 +9,7 @@ class Money: SCNNode {
         let scene = SCNScene(named: "moneyInvestment.scnassets/main.scn")!
         let node = scene.rootNode.childNode(withName: "money", recursively: true)!
         let material = SCNMaterial()
+        material.lightingModel = SCNMaterial.LightingModel.physicallyBased
         material.name = "MoneyImage"
         material.diffuse.contents = UIImage(named: moneyValues[Int.random(in: 0...1)])
         node.geometry?.materials = [material]

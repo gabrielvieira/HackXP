@@ -17,7 +17,7 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupScene()
-        self.setupLights()
+        //self.setupLights()
         self.setupPhysics()
         self.setupRecognizers()
         // Create a ARSession configuration object we can re-use
