@@ -35,4 +35,13 @@ class ViewController: UIViewController {
         let viewController = storyBoard.instantiateViewController(withIdentifier: "ARFaceSimpleView")
         self.navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    @IBAction func warning(_ sender: Any) {
+        
+        let storyBoard = UIStoryboard(name: "ARFaceSimple", bundle: nil)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: "ARFaceSimpleView") as! ARFaceSimpleViewController
+        viewController.selectedFace = "chefe"
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }

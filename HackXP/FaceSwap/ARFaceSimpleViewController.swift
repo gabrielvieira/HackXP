@@ -14,6 +14,7 @@ class ARFaceSimpleViewController: UIViewController, ARSCNViewDelegate {
 //    @IBOutlet var trackingStateLabel: UILabel!
     
     private var faceNode: ARFaceNode!
+    var selectedFace: String = "huck"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,7 @@ class ARFaceSimpleViewController: UIViewController, ARSCNViewDelegate {
             return;
         }
         faceNode = ARFaceNode(device: device)
-        let nodeBacana = MaskNode()
+        let nodeBacana = MaskNode(image: self.selectedFace)
         faceNode.addChildNode(nodeBacana)
         nodeBacana.position = SCNVector3(0, 0.02, 0)
         

@@ -34,7 +34,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xdl-l2-45U">
-                                <rect key="frame" x="16" y="264" width="343" height="170"/>
+                                <rect key="frame" x="16" y="264" width="343" height="230"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p24-hr-5r1" customClass="RoundedButton" customModule="HackXP" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
@@ -76,6 +76,20 @@
                                         </state>
                                         <connections>
                                             <action selector="faceDidTap:" destination="BV1-FR-VrT" eventType="touchUpInside" id="9Gf-H9-Ru5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6B-Il-gEv" customClass="RoundedButton" customModule="HackXP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="180" width="343" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SFy-E9-Dvf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Proibido Clicar ⚠️">
+                                            <color key="titleColor" red="0.93725490199999995" green="0.93333333330000001" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="warning:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Xjc-7u-GiW"/>
                                         </connections>
                                     </button>
                                 </subviews>

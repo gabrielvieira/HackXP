@@ -11,11 +11,19 @@ import ARKit
 class MaskNode: SCNNode {
     
     var index = 0
+    var width: CGFloat = 0.27
+    var height: CGFloat = 0.27
     
-    init(width: CGFloat = 0.27, height: CGFloat = 0.27) {
+    init(image: String) {
         super.init()
-        let image = UIImage(named: "huck")
-        let plane = SCNPlane(width: width, height: height)
+        
+        if image == "chefe" {
+            self.width = 0.23
+            self.height = 0.27
+        }
+        
+        let image = UIImage(named: image)
+        let plane = SCNPlane(width: self.width, height: height)
         plane.firstMaterial?.diffuse.contents = image
         plane.firstMaterial?.isDoubleSided = true
         geometry = plane
