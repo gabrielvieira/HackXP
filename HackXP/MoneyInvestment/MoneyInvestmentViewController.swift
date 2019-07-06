@@ -17,7 +17,6 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
         self.setupLights()
         self.setupPhysics()
         self.setupRecognizers()
-        
         // Create a ARSession configuration object we can re-use
         self.arConfig = ARWorldTrackingConfiguration()
         self.arConfig.isLightEstimationEnabled = true
@@ -97,7 +96,7 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
         self.sceneView.autoenablesDefaultLighting = false
         self.sceneView.automaticallyUpdatesLighting = false
         
-        let env = UIImage(named: "./Assets.scnassets/Environment/spherical.jpg")
+        let env = UIImage(named: "./moneyInvestment.scnassets/Environment/spherical.jpg")
         self.sceneView.scene.lightingEnvironment.contents = env
     }
     
@@ -234,8 +233,16 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
         let position = SCNVector3Make(hitResult.worldTransform.columns.3.x, hitResult.worldTransform.columns.3.y.advanced(by: insertionYOffset), hitResult.worldTransform.columns.3.z)
         
         let cube = Money(position)
+        
+//        let scnp = SCNParticleSystem(named: "Fire.scnp", inDirectory: nil)
+//        let fireNode = SCNNode()
+//        fireNode.addParticleSystem(scnp!)
+//        fireNode.position = cube.position
+//        fireNode.scale = SCNVector3(0.001, 0.001, 0.001)
+//        sceneView.scene.rootNode.addChildNode(fireNode)
         self.cubes.append(cube)
         self.sceneView.scene.rootNode.addChildNode(cube)
+        
     }
     
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
