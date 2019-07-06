@@ -1,66 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FMv-F2-1Dp">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sxp-Pg-i1R">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Money Investment View Controller-->
-        <scene sceneID="DU8-sJ-Zhw">
+        <scene sceneID="sKT-hZ-9pa">
             <objects>
-                <viewController storyboardIdentifier="MoneyInvestment" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FMv-F2-1Dp" customClass="MoneyInvestmentViewController" customModule="HackXP" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xN3-U7-U1S"/>
-                        <viewControllerLayoutGuide type="bottom" id="R0k-rQ-nHb"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Dr4-4I-xwJ">
+                <viewController storyboardIdentifier="MoneyInvestment" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sxp-Pg-i1R" customClass="MoneyInvestmentViewController" customModule="HackXP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SgJ-Hx-pOR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWq-fI-wtI">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pM-lC-qxv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHn-hA-dCr">
-                                <rect key="frame" x="330" y="617" width="29" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="...">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mTV-dj-vTr">
-                                <rect key="frame" x="16" y="20" width="343" height="31"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="systemPinkColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="XEq-jr-er8"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mTV-dj-vTr" firstAttribute="leading" secondItem="Dr4-4I-xwJ" secondAttribute="leadingMargin" id="6w7-tY-qCB"/>
-                            <constraint firstItem="mTV-dj-vTr" firstAttribute="trailing" secondItem="Dr4-4I-xwJ" secondAttribute="trailingMargin" id="Mah-es-bNx"/>
-                            <constraint firstItem="mTV-dj-vTr" firstAttribute="top" secondItem="xN3-U7-U1S" secondAttribute="bottom" constant="20" id="Wjh-Ua-ATC"/>
+                            <constraint firstItem="6pM-lC-qxv" firstAttribute="top" secondItem="SgJ-Hx-pOR" secondAttribute="top" id="6tJ-bF-KSK"/>
+                            <constraint firstAttribute="bottom" secondItem="6pM-lC-qxv" secondAttribute="bottom" id="nJ0-a8-iir"/>
+                            <constraint firstItem="6pM-lC-qxv" firstAttribute="leading" secondItem="SgJ-Hx-pOR" secondAttribute="leading" id="qa1-qU-uwq"/>
+                            <constraint firstAttribute="trailing" secondItem="6pM-lC-qxv" secondAttribute="trailing" id="vfb-uq-IDm"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="bJQ-cy-1kP"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mcO-eP-xUR"/>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="sceneView" destination="JWq-fI-wtI" id="mxw-gI-IHI"/>
+                        <outlet property="sceneView" destination="6pM-lC-qxv" id="Wq5-DT-FqN"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nzS-G2-ofk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mqa-Ib-rox" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="517.60000000000002" y="138.98050974512745"/>
+            <point key="canvasLocation" x="368" y="-146"/>
         </scene>
     </scenes>
 </document>

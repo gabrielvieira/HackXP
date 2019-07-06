@@ -67,7 +67,7 @@ class Plane: SCNNode {
     }
     
     class func currentMaterial() -> SCNMaterial? {
-         PBRMaterial.materialNamed(name: "tron")
+         return PBRMaterial.materialNamed(name: "tron")
     }
     
     func update(anchor: ARPlaneAnchor) {

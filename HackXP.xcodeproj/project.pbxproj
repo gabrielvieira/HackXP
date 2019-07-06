@@ -13,7 +13,6 @@
 		574F4A4022D08BE900443D7D /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F4A3C22D08BE800443D7D /* Money.swift */; };
 		574F4A4122D08BE900443D7D /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F4A3D22D08BE800443D7D /* Plane.swift */; };
 		574F4A4322D08C1800443D7D /* MoneyInvestmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F4A4222D08C1800443D7D /* MoneyInvestmentViewController.swift */; };
-		574F4A4522D08C7800443D7D /* MoneyInvestment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574F4A4422D08C7800443D7D /* MoneyInvestment.storyboard */; };
 		C0121B8822D083B1004EE94A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C0121B8722D083B0004EE94A /* README.md */; };
 		C0121B8A22D083C2004EE94A /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0121B8922D083C2004EE94A /* Inceptionv3.mlmodel */; };
 		C0121B8E22D083EE004EE94A /* ARFaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0121B8B22D083EE004EE94A /* ARFaceNode.swift */; };
@@ -26,6 +25,7 @@
 		C042CAFB22D0492600838227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C042CAF922D0492600838227 /* Main.storyboard */; };
 		C042CAFD22D0492700838227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C042CAFC22D0492700838227 /* Assets.xcassets */; };
 		C042CB0022D0492700838227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C042CAFE22D0492700838227 /* LaunchScreen.storyboard */; };
+		C0BA116622D09BCA00CD99DA /* MoneyInvestment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BA116522D09BCA00CD99DA /* MoneyInvestment.storyboard */; };
 		F7872A8022D04C6600BEC57A /* MoneyAirplaneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7872A7F22D04C6600BEC57A /* MoneyAirplaneViewController.swift */; };
 		F7872A8222D04CC000BEC57A /* MoneyAirplane.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7872A8122D04CC000BEC57A /* MoneyAirplane.storyboard */; };
 		F7872A8422D0511D00BEC57A /* silvio.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = F7872A8322D0511D00BEC57A /* silvio.scnassets */; };
@@ -42,7 +42,6 @@
 		574F4A3C22D08BE800443D7D /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		574F4A3D22D08BE800443D7D /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		574F4A4222D08C1800443D7D /* MoneyInvestmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyInvestmentViewController.swift; sourceTree = "<group>"; };
-		574F4A4422D08C7800443D7D /* MoneyInvestment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MoneyInvestment.storyboard; sourceTree = "<group>"; };
 		C0121B8722D083B0004EE94A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C0121B8922D083C2004EE94A /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		C0121B8B22D083EE004EE94A /* ARFaceNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARFaceNode.swift; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		C042CAFC22D0492700838227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C042CAFF22D0492700838227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C042CB0122D0492700838227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0BA116522D09BCA00CD99DA /* MoneyInvestment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoneyInvestment.storyboard; sourceTree = "<group>"; };
 		F7872A7F22D04C6600BEC57A /* MoneyAirplaneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyAirplaneViewController.swift; sourceTree = "<group>"; };
 		F7872A8122D04CC000BEC57A /* MoneyAirplane.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoneyAirplane.storyboard; sourceTree = "<group>"; };
 		F7872A8322D0511D00BEC57A /* silvio.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = silvio.scnassets; path = HackXP/silvio.scnassets; sourceTree = SOURCE_ROOT; };
@@ -80,13 +80,13 @@
 		574F4A3722D08B1200443D7D /* MoneyInvestment */ = {
 			isa = PBXGroup;
 			children = (
-				574F4A4422D08C7800443D7D /* MoneyInvestment.storyboard */,
 				574F4A4222D08C1800443D7D /* MoneyInvestmentViewController.swift */,
 				574F4A3B22D08BE800443D7D /* CollisionCategory.swift */,
 				574F4A3C22D08BE800443D7D /* Money.swift */,
 				574F4A3A22D08BE800443D7D /* PBRMaterial.swift */,
 				574F4A3D22D08BE800443D7D /* Plane.swift */,
 				574F4A3822D08BC600443D7D /* moneyInvestment.scnassets */,
+				C0BA116522D09BCA00CD99DA /* MoneyInvestment.storyboard */,
 			);
 			path = MoneyInvestment;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 				F7872A8422D0511D00BEC57A /* silvio.scnassets in Resources */,
 				C042CB0022D0492700838227 /* LaunchScreen.storyboard in Resources */,
 				F7872A8222D04CC000BEC57A /* MoneyAirplane.storyboard in Resources */,
-				574F4A4522D08C7800443D7D /* MoneyInvestment.storyboard in Resources */,
+				C0BA116622D09BCA00CD99DA /* MoneyInvestment.storyboard in Resources */,
 				C0121B9022D083EE004EE94A /* ARFaceSimple.storyboard in Resources */,
 				C042CAFD22D0492700838227 /* Assets.xcassets in Resources */,
 				C042CAFB22D0492600838227 /* Main.storyboard in Resources */,
@@ -407,7 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6F983ZW9E9;
+				DEVELOPMENT_TEAM = 6C9PJ896FB;
 				INFOPLIST_FILE = HackXP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -425,7 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6F983ZW9E9;
+				DEVELOPMENT_TEAM = 6C9PJ896FB;
 				INFOPLIST_FILE = HackXP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
