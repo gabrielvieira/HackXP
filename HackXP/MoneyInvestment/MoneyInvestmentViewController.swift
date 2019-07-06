@@ -17,7 +17,7 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupScene()
-        //self.setupLights()
+        self.setupLights()
         self.setupPhysics()
         self.setupRecognizers()
         // Create a ARSession configuration object we can re-use
@@ -312,7 +312,7 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
         // A value of 1000 is considered neutral, lighting environment intensity normalizes
         // 1.0 to neutral so we need to scale the ambientIntensity value
         let intensity = estimate.ambientIntensity / 1000.0
-        self.sceneView.scene.lightingEnvironment.intensity = intensity
+        self.sceneView.scene.lightingEnvironment.intensity = intensity*1.5
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
