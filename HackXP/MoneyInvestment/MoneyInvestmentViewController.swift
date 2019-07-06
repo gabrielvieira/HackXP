@@ -4,6 +4,7 @@ import ARKit
 
 class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDelegate, SCNPhysicsContactDelegate, UIPopoverPresentationControllerDelegate {
     
+    @IBOutlet weak var segmentSelected: UISegmentedControl!
     @IBOutlet var sceneView: ARSCNView!
     
     // A dictionary of all the current planes being rendered in the scene
@@ -46,6 +47,9 @@ class MoneyInvestmentViewController: UIViewController, ARSCNViewDelegate, UIGest
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
+    }
+    
+    @IBAction func didChangeSegment(_ sender: Any) {
     }
     
     func setupScene() {
