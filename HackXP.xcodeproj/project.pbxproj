@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0121B8822D083B1004EE94A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C0121B8722D083B0004EE94A /* README.md */; };
+		C0121B8A22D083C2004EE94A /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0121B8922D083C2004EE94A /* Inceptionv3.mlmodel */; };
+		C0121B8E22D083EE004EE94A /* ARFaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0121B8B22D083EE004EE94A /* ARFaceNode.swift */; };
+		C0121B8F22D083EE004EE94A /* ARFaceSimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0121B8C22D083EE004EE94A /* ARFaceSimpleViewController.swift */; };
+		C0121B9022D083EE004EE94A /* ARFaceSimple.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0121B8D22D083EE004EE94A /* ARFaceSimple.storyboard */; };
+		C0121B9222D0848B004EE94A /* TrackingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0121B9122D0848B004EE94A /* TrackingState.swift */; };
+		C0121B9422D08644004EE94A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0121B9322D08644004EE94A /* RoundedButton.swift */; };
 		C042CAF422D0492600838227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C042CAF322D0492600838227 /* AppDelegate.swift */; };
 		C042CAF622D0492600838227 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C042CAF522D0492600838227 /* art.scnassets */; };
 		C042CAF822D0492600838227 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C042CAF722D0492600838227 /* ViewController.swift */; };
@@ -23,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0121B8722D083B0004EE94A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C0121B8922D083C2004EE94A /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		C0121B8B22D083EE004EE94A /* ARFaceNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARFaceNode.swift; sourceTree = "<group>"; };
+		C0121B8C22D083EE004EE94A /* ARFaceSimpleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARFaceSimpleViewController.swift; sourceTree = "<group>"; };
+		C0121B8D22D083EE004EE94A /* ARFaceSimple.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ARFaceSimple.storyboard; sourceTree = "<group>"; };
+		C0121B9122D0848B004EE94A /* TrackingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingState.swift; sourceTree = "<group>"; };
+		C0121B9322D08644004EE94A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		C042CAF022D0492600838227 /* HackXP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackXP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C042CAF322D0492600838227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C042CAF522D0492600838227 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -51,6 +65,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0121B8422D07739004EE94A /* FaceSwap */ = {
+			isa = PBXGroup;
+			children = (
+				C0121B8B22D083EE004EE94A /* ARFaceNode.swift */,
+				C0121B8D22D083EE004EE94A /* ARFaceSimple.storyboard */,
+				C0121B8C22D083EE004EE94A /* ARFaceSimpleViewController.swift */,
+				C0121B9122D0848B004EE94A /* TrackingState.swift */,
+			);
+			path = FaceSwap;
+			sourceTree = "<group>";
+		};
+		C0121B8522D07AD7004EE94A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C042CAF722D0492600838227 /* ViewController.swift */,
+				C042CAF922D0492600838227 /* Main.storyboard */,
+				C0121B9322D08644004EE94A /* RoundedButton.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		C0121B8622D083B0004EE94A /* mlmodels */ = {
+			isa = PBXGroup;
+			children = (
+				C0121B8922D083C2004EE94A /* Inceptionv3.mlmodel */,
+				C0121B8722D083B0004EE94A /* README.md */,
+			);
+			path = mlmodels;
+			sourceTree = "<group>";
+		};
 		C042CAE722D0492600838227 = {
 			isa = PBXGroup;
 			children = (
@@ -70,11 +114,12 @@
 		C042CAF222D0492600838227 /* HackXP */ = {
 			isa = PBXGroup;
 			children = (
+				C0121B8622D083B0004EE94A /* mlmodels */,
+				C0121B8522D07AD7004EE94A /* Menu */,
+				C0121B8422D07739004EE94A /* FaceSwap */,
 				F7872A7E22D04B3400BEC57A /* MoneyAirplane */,
 				C042CAF322D0492600838227 /* AppDelegate.swift */,
 				C042CAF522D0492600838227 /* art.scnassets */,
-				C042CAF722D0492600838227 /* ViewController.swift */,
-				C042CAF922D0492600838227 /* Main.storyboard */,
 				C042CAFC22D0492700838227 /* Assets.xcassets */,
 				C042CAFE22D0492700838227 /* LaunchScreen.storyboard */,
 				C042CB0122D0492700838227 /* Info.plist */,
@@ -156,9 +201,11 @@
 			files = (
 				C042CAF622D0492600838227 /* art.scnassets in Resources */,
 				F7872A9322D0670300BEC57A /* silvo.png in Resources */,
+				C0121B8822D083B1004EE94A /* README.md in Resources */,
 				F7872A8422D0511D00BEC57A /* silvio.scnassets in Resources */,
 				C042CB0022D0492700838227 /* LaunchScreen.storyboard in Resources */,
 				F7872A8222D04CC000BEC57A /* MoneyAirplane.storyboard in Resources */,
+				C0121B9022D083EE004EE94A /* ARFaceSimple.storyboard in Resources */,
 				C042CAFD22D0492700838227 /* Assets.xcassets in Resources */,
 				C042CAFB22D0492600838227 /* Main.storyboard in Resources */,
 				F7872A8F22D05E9E00BEC57A /* silvio.mp3 in Resources */,
@@ -173,10 +220,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0121B8A22D083C2004EE94A /* Inceptionv3.mlmodel in Sources */,
 				F7872A9122D05EBF00BEC57A /* SilvioPlayer.swift in Sources */,
+				C0121B9222D0848B004EE94A /* TrackingState.swift in Sources */,
 				F7872A8022D04C6600BEC57A /* MoneyAirplaneViewController.swift in Sources */,
+				C0121B9422D08644004EE94A /* RoundedButton.swift in Sources */,
+				C0121B8E22D083EE004EE94A /* ARFaceNode.swift in Sources */,
 				C042CAF822D0492600838227 /* ViewController.swift in Sources */,
 				C042CAF422D0492600838227 /* AppDelegate.swift in Sources */,
+				C0121B8F22D083EE004EE94A /* ARFaceSimpleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 54JDK55DR5;
+				DEVELOPMENT_TEAM = 6C9PJ896FB;
 				INFOPLIST_FILE = HackXP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -341,7 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 54JDK55DR5;
+				DEVELOPMENT_TEAM = 6C9PJ896FB;
 				INFOPLIST_FILE = HackXP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -9,7 +9,7 @@
 import UIKit
 import ARKit
 
-private class MaskNode: SCNNode {
+private class PeopleNode: SCNNode {
     
     var index = 0
     
@@ -117,7 +117,7 @@ class PhyisicsViewController: UIViewController {
             let toPosition = camera.convertPosition(toPositionCamera, to: nil)
             
             let move = SCNAction.move(to: toPosition, duration: 1.5)
-            let silvio = MaskNode(width: 0.799, height: 0.316)
+            let silvio = PeopleNode(width: 0.799, height: 0.316)
             silvio.position = SCNVector3Make(0, 0, -2)
             sceneView.scene.rootNode.addChildNode(silvio)
             move.timingMode = .easeInEaseOut
