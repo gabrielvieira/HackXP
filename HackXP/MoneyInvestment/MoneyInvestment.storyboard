@@ -20,10 +20,46 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pM-lC-qxv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="6in-Wo-cB8">
+                                <rect key="frame" x="20" y="40" width="335" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" ambiguous="YES" text="Aporte inicial: R$ 0,00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9r-pk-X36">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Investimento Mensal: R$ 300,00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPo-hu-quh">
+                                        <rect key="frame" x="0.0" y="44.5" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Anos investindo: 45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z82-pL-Pcl">
+                                        <rect key="frame" x="0.0" y="89" width="335" height="7"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Zb3-U2-bmV">
+                                        <rect key="frame" x="0.0" y="120" width="335" height="1"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="jLF-vQ-EMP"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6pM-lC-qxv" firstAttribute="top" secondItem="SgJ-Hx-pOR" secondAttribute="top" id="6tJ-bF-KSK"/>
+                            <constraint firstItem="bJQ-cy-1kP" firstAttribute="trailing" secondItem="6in-Wo-cB8" secondAttribute="trailing" constant="20" id="IU3-di-knu"/>
+                            <constraint firstItem="6in-Wo-cB8" firstAttribute="top" secondItem="bJQ-cy-1kP" secondAttribute="top" constant="20" id="WYK-81-Xiq"/>
+                            <constraint firstItem="6in-Wo-cB8" firstAttribute="leading" secondItem="bJQ-cy-1kP" secondAttribute="leading" constant="20" id="j7w-6t-XPu"/>
                             <constraint firstAttribute="bottom" secondItem="6pM-lC-qxv" secondAttribute="bottom" id="nJ0-a8-iir"/>
                             <constraint firstItem="6pM-lC-qxv" firstAttribute="leading" secondItem="SgJ-Hx-pOR" secondAttribute="leading" id="qa1-qU-uwq"/>
                             <constraint firstAttribute="trailing" secondItem="6pM-lC-qxv" secondAttribute="trailing" id="vfb-uq-IDm"/>
@@ -36,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mqa-Ib-rox" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="368" y="-146"/>
+            <point key="canvasLocation" x="367.19999999999999" y="-146.17691154422789"/>
         </scene>
     </scenes>
 </document>

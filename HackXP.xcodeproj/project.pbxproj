@@ -26,6 +26,8 @@
 		C042CAFD22D0492700838227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C042CAFC22D0492700838227 /* Assets.xcassets */; };
 		C042CB0022D0492700838227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C042CAFE22D0492700838227 /* LaunchScreen.storyboard */; };
 		C0BA116622D09BCA00CD99DA /* MoneyInvestment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BA116522D09BCA00CD99DA /* MoneyInvestment.storyboard */; };
+		C0BA116922D09FC700CD99DA /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = C0BA116722D09FC700CD99DA /* spark.png */; };
+		C0BA116A22D09FC700CD99DA /* fire.scnp in Resources */ = {isa = PBXBuildFile; fileRef = C0BA116822D09FC700CD99DA /* fire.scnp */; };
 		F7872A8022D04C6600BEC57A /* MoneyAirplaneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7872A7F22D04C6600BEC57A /* MoneyAirplaneViewController.swift */; };
 		F7872A8222D04CC000BEC57A /* MoneyAirplane.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7872A8122D04CC000BEC57A /* MoneyAirplane.storyboard */; };
 		F7872A8422D0511D00BEC57A /* silvio.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = F7872A8322D0511D00BEC57A /* silvio.scnassets */; };
@@ -57,6 +59,8 @@
 		C042CAFF22D0492700838227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C042CB0122D0492700838227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0BA116522D09BCA00CD99DA /* MoneyInvestment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoneyInvestment.storyboard; sourceTree = "<group>"; };
+		C0BA116722D09FC700CD99DA /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		C0BA116822D09FC700CD99DA /* fire.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = fire.scnp; sourceTree = "<group>"; };
 		F7872A7F22D04C6600BEC57A /* MoneyAirplaneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyAirplaneViewController.swift; sourceTree = "<group>"; };
 		F7872A8122D04CC000BEC57A /* MoneyAirplane.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoneyAirplane.storyboard; sourceTree = "<group>"; };
 		F7872A8322D0511D00BEC57A /* silvio.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = silvio.scnassets; path = HackXP/silvio.scnassets; sourceTree = SOURCE_ROOT; };
@@ -87,6 +91,8 @@
 				574F4A3D22D08BE800443D7D /* Plane.swift */,
 				574F4A3822D08BC600443D7D /* moneyInvestment.scnassets */,
 				C0BA116522D09BCA00CD99DA /* MoneyInvestment.storyboard */,
+				C0BA116722D09FC700CD99DA /* spark.png */,
+				C0BA116822D09FC700CD99DA /* fire.scnp */,
 			);
 			path = MoneyInvestment;
 			sourceTree = "<group>";
@@ -230,9 +236,11 @@
 				574F4A3922D08BC600443D7D /* moneyInvestment.scnassets in Resources */,
 				F7872A8422D0511D00BEC57A /* silvio.scnassets in Resources */,
 				C042CB0022D0492700838227 /* LaunchScreen.storyboard in Resources */,
+				C0BA116922D09FC700CD99DA /* spark.png in Resources */,
 				F7872A8222D04CC000BEC57A /* MoneyAirplane.storyboard in Resources */,
 				C0BA116622D09BCA00CD99DA /* MoneyInvestment.storyboard in Resources */,
 				C0121B9022D083EE004EE94A /* ARFaceSimple.storyboard in Resources */,
+				C0BA116A22D09FC700CD99DA /* fire.scnp in Resources */,
 				C042CAFD22D0492700838227 /* Assets.xcassets in Resources */,
 				C042CAFB22D0492600838227 /* Main.storyboard in Resources */,
 				F7872A8F22D05E9E00BEC57A /* silvio.mp3 in Resources */,
